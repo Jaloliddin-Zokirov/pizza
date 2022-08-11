@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="h1 text-center mt-4 mb-5">Pitsa buyurtma qilish</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="pizza">
+      <div class="container">
+        <div class="d-flex row">
+          <form class="js-form col-8 border-end" action="https://echo.htmlacademy.ru" method="post" id="form-id">
+            <div class="pizza__bread d-flex mb-4">
+              <div class="col-7">
+                <label class="d-flex flex-column h2 fs-4 w-50">Noni qanday bo'lsin?
+                  <select class="form-select js-select" name="pizza_bread">
+                    <option selected hidden>Qalinlikni tanlang</option>
+                    <option value="qalin">Qalin</option>
+                    <option value="ortacha">O'rtacha</option>
+                    <option value="yuqa">Yuqa</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="pizza__size row mb-4">
+              <h2 class="h2 fs-4 mb-2">Kattaligi</h2>
+              <div class="d-flex align-items-center col-7">
+                <label class="input-group">
+                  <input class="js-size input-hover visually-hidden" type="radio" name="pizza_size" value="25">
+                  <span class="js-span span-hover rounded-pill border py-4 px-3 fw-bold fs-5">25 cm</span>
+                </label>
+                <label class="input-group">
+                  <input class="js-size-two  input-hover visually-hidden" type="radio" name="pizza_size" value="30">
+                  <span class="js-span-two span-hover rounded-pill border py-4 px-3 fw-bold fs-5">30 cm</span>
+                </label>
+                <label class="input-group">
+                  <input class="js-size-there input-hover visually-hidden" type="radio" name="pizza_size" value="35">
+                  <span class="js-span-there span-hover rounded-pill border py-4 px-3 fw-bold fs-5">35 cm</span>
+                </label>
+              </div>
+            </div>
+            <div class="pizza__over mb-4">
+              <h2 class="h2 fs-4 mb-2">Ustiga nima solaylik?</h2>
+              <div class="row d-flex">
+                <div class="col-7 d-flex">
+                  <div class="col-6">
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Pomidor" id="pomidor" name="pizza_pomidor">
+                      <label class="fw-bold fs-5 ms-2" for="pomidor">Pomidor</label>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Kurka goshti" id="kurka" name="pizza_kurka-gosht">
+                      <label class="fw-bold fs-5 ms-2" for="kurka">Kurka go'shti</label>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Zaytun" id="zaytun" name="pizza_zaytun">
+                      <label class="fw-bold fs-5 ms-2" for="zaytun">Zaytun</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Tuzlangan bodring" id="bodring" name="pizza_tuzlangan-bodring">
+                      <label class="fw-bold fs-5 ms-2" for="bodring">Tuzlangan bodring</label>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Qoziqorin" id="qo'ziqorin" name="pizza_qoziqorin">
+                      <label class="fw-bold fs-5 ms-2" for="qo'ziqorin">Qo'ziqorin</label>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <input class="js-checkbox" type="checkbox" value="Qazi" id="qazi" name="pizza_qazi">
+                      <label class="fw-bold fs-5 ms-2" for="qazi">Qazi</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pizza__addition">
+              <h2 class="h2 fs-4 mb-2">Qo'shimchalar</h2>
+              <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center me-5">
+                  <input class="js-addition" type="checkbox" value="Achchiq" id="achchiq" name="pizza_achchiq">
+                  <label class="ms-2 fw-bold fs-5" for="achchiq">Achchiq</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input class="js-addition" type="checkbox" value="Sosiskali" id="sosiska" name="pizza_sosiskali">
+                  <label class="ms-2 fw-bold fs-5" for="sosiska">Sosiskali</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="pizza__right col-4 ps-5">
+            <div class="col-12 mb-4 d-flex align-items-end">
+              <p class="fw-bold fs-3 m-0 me-3">Non:</p>
+              <p class="js-bread fs-4 m-0"></p>
+            </div>
+            <div class="col-12 mb-4 d-flex align-items-center">
+              <p class="fw-bold fs-3 m-0 me-3">Kattaligi:</p>
+              <p class="js-text-size fs-4 m-0"></p>
+            </div>
+            <div class="on col-12 mb-3 d-flex flex-column">
+              <p class="fw-bold fs-3 m-0">Ustida:</p>
+              <p class="valueList fs-4 m-0"></p>
+            </div>
+            <div class="addition-box col-12">
+              <p class="fw-bold fs-3 m-0">Qo'shimcha:</p>
+              <p class="addition fs-4 m-0"></p>
+            </div>
+            <button class="btn btn-primary w-75 d-block py-2 mx-auto" form="form-id" type="submit">Tasdiqlash</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
